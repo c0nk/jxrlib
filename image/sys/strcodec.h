@@ -108,6 +108,8 @@ CT_ASSERT(sizeof(INTPTR_T) == sizeof(void*), strcodec2);
 #define ALIGNUP(p, s) ((void*)(((UINTPTR_T)(p) + ((UINTPTR_T)(s) - 1)) & ~((UINTPTR_T)(s) - 1)))
 #define ALIGNDOWN(p, s) ((void*)((UINTPTR_T)(p) & ~((UINTPTR_T)(s) - 1)))
 
+U32 _byteswap_ulong(U32 bits);
+
 //================================================================
 // timer support
 //================================================================
